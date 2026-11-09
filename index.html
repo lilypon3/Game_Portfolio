@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[YOUR NAME] | Game Design Portfolio</title>
+<style>
+  :root {
+    --bg: #fff7fb; --card: #ffffff; --text: #2b2233; --muted: #6d6277;
+    --accent: #c0559a; --accent-soft: #f6e1ef; --border: #ead9e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #181220; --card: #231a2e; --text: #f3ecf7; --muted: #b3a6bf;
+            --accent: #f08ccb; --accent-soft: #3a2848; --border: #3a2d47; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+  header, main, footer { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { padding-top: 56px; padding-bottom: 8px; }
+  h1 { font-size: 2.4rem; margin: 0 0 6px; }
+  h2 { font-size: 1.6rem; margin: 0 0 4px; }
+  h3 { margin: 22px 0 6px; font-size: 1.05rem; color: var(--accent); }
+  .tagline { color: var(--muted); font-size: 1.1rem; margin: 0; }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+            padding: 28px; margin: 28px 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+  .tags li { background: var(--accent-soft); color: var(--accent); padding: 3px 12px;
+             border-radius: 999px; font-size: .85rem; font-weight: 600; }
+  .game { position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 18px 0 8px;
+          border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: #000; }
+  .game iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; padding: 9px 18px;
+         border-radius: 10px; text-decoration: none; font-weight: 600; }
+  .note { color: var(--muted); font-size: .9rem; }
+  ul { padding-left: 20px; }
+  footer { padding-bottom: 48px; color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>[YOUR NAME]</h1>
+  <p class="tagline">Game design student. I like designing small mechanics and testing them on real players.</p>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>[Two or three sentences: who you are, what you study, what kinds of games you like to design.]</p>
+  </section>
+
+  <section id="project2">
+    <h2>[GAME TITLE]</h2>
+    <p class="tagline">A pet fashion show where you don't choose your materials. You pull them, then build the best outfit you can out of chance.</p>
+    <ul class="tags"><li>Unity 6</li><li>C#</li><li>2D / UI</li><li>Playtesting</li><li>Jira</li></ul>
+
+    <div class="game">
+      <!-- Path to your Project 2 Web build folder (index.html at its top level) -->
+      <iframe src="project2/index.html" title="[GAME TITLE]" allowfullscreen></iframe>
+    </div>
+    <p class="note">Mouse only. If the game doesn't load, <a href="project2/index.html">open it in its own tab</a>.</p>
+
+    <h3>About the game</h3>
+    <p>[Describe the core mechanic: pull random accessories from a gacha, dress the cat to match the theme, and weigh each re-roll against the cat's stress. Mention the six-show level and what each show teaches.]</p>
+
+    <h3>Technologies</h3>
+    <p>Unity 6 (UI-based 2D), C#, ScriptableObjects for data, TextMeshPro, Jira for task tracking, hand-drawn art.</p>
+
+    <h3>My contributions</h3>
+    <ul>
+      <li>[Game concept and core mechanic design]</li>
+      <li>[All programming: gacha, drag and drop, judging, level progression]</li>
+      <li>[Hand-drawn art: cat, accessories, judges]</li>
+      <li>[Ran playtests and implemented feedback]</li>
+    </ul>
+
+    <h3>What playtesting changed</h3>
+    <p>[Two or three sentences about the biggest changes you made because of player feedback.]</p>
+  </section>
+
+  <section id="project1">
+    <h2>[PROJECT 1 TITLE]</h2>
+    <p class="tagline">[One-line description of Project 1]</p>
+    <ul class="tags"><li>[Engine]</li><li>[Language]</li></ul>
+
+    <div class="game">
+      <iframe src="project1/index.html" title="[PROJECT 1 TITLE]" allowfullscreen></iframe>
+    </div>
+    <p class="note">If the game doesn't load, <a href="project1/index.html">open it in its own tab</a>.</p>
+
+    <h3>About the game</h3>
+    <p>[Describe what the game is and how it plays.]</p>
+
+    <h3>Technologies</h3>
+    <p>[List them.]</p>
+
+    <h3>My contributions</h3>
+    <ul>
+      <li>[What you did]</li>
+      <li>[What you did]</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>[Email or GitHub link]</p>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 [YOUR NAME]</footer>
+</body>
+</html>
